@@ -1,6 +1,8 @@
 import SearchAppBar from '../../components/navbar/navbar';
 import './homepage.css';
 import UserCard from '../../components/card/card'
+import Users from '../../components/notes/notes';
+
 
 export default function Homepage() {
     return (
@@ -22,6 +24,9 @@ export default function Homepage() {
           </div>
           <div className="usercard">
           <UserCard />
+          </div>
+          <div>
+          <Users />
           </div>
 
       </div>

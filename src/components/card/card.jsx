@@ -11,7 +11,6 @@ import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import MoreVertIcon from '@mui/icons-material/MoreVert';
 import PersonIcon from '@mui/icons-material/Person';
 import './card.css'
-import { userList } from '../../../data/user-list';
 import { useState, useEffect } from 'react';
 
 const ExpandMore = styled((props) => {
@@ -25,19 +24,12 @@ const ExpandMore = styled((props) => {
   }),
 }));
 
-export default function UserCard({user}) {
+export default function UserCard({Users}) {
   const [expanded, setExpanded] = React.useState(false);
-  const [notes, userList] = useState([])
 
   const handleExpandClick = () => {
     setExpanded(!expanded);
   };
-
-  useEffect(() =>{
-      fetch('./src/components/userList.js')
-      .then(res => res.json())
-      .then(data => userList(data))
-  }, [])
 
   return (
     <Card sx={{ width: 500 }}>
@@ -46,7 +38,9 @@ export default function UserCard({user}) {
           <PersonIcon fontSize="large">
           </PersonIcon>
         }
-        title={userList.firstName}
+        // title={Users.id}
+        // subheader={Users.zip}
+        
         action={
             <ExpandMore
             expand={expanded}
