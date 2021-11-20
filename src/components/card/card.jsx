@@ -13,8 +13,6 @@ import PersonIcon from '@mui/icons-material/Person';
 import './card.css'
 import { userList } from '../userList';
 
-
-
 const ExpandMore = styled((props) => {
   const { expand, ...other } = props;
   return <IconButton {...other} />;
@@ -40,9 +38,8 @@ export default function UserCard() {
           <PersonIcon fontSize="large">
           </PersonIcon>
         }
-        title="Alexander The Great"
-        subheader="Administrator"
-        email="alexander@conqueror.com"
+        title="TEST"
+        subheader="Test"
         />
       {/* <CardContent>
         <Typography variant="body2" color="text.secondary">
@@ -51,6 +48,7 @@ export default function UserCard() {
           if you like.
         </Typography>
       </CardContent> */}
+
       <CardActions disableSpacing>
         <ExpandMore
           expand={expanded}
@@ -64,12 +62,7 @@ export default function UserCard() {
       <Collapse in={expanded} timeout="auto" unmountOnExit>
         <CardContent>
           <Typography paragraph>First Name</Typography>
-          {userList.map((userList, id) => (
-              <div key={id}>
-                    {userList.firstName}
-                </div>
-            ))}
-            
+        
             <Typography paragraph>Phone:</Typography>
 
             <Typography paragraph>Created At:</Typography>
