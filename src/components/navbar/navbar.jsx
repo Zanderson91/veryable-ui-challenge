@@ -8,13 +8,14 @@ import Typography from '@mui/material/Typography';
 import InputBase from '@mui/material/InputBase';
 import MenuIcon from '@mui/icons-material/Menu';
 import SearchIcon from '@mui/icons-material/Search';
+import './navbar';
 
 const Search = styled('div')(({ theme }) => ({
     position: 'relative',
     borderRadius: theme.shape.borderRadius,
     backgroundColor: alpha(theme.palette.common.white, 0.15),
     '&:hover': {
-      backgroundColor: alpha(theme.palette.common.white, 0.25),
+      backgroundColor: alpha(theme.palette.primary.light, 0.25),
     },
     marginLeft: 0,
     width: '100%',
@@ -67,11 +68,12 @@ const Search = styled('div')(({ theme }) => ({
             </IconButton>
             <Typography
               variant="h6"
+              align="center"
               noWrap
               component="div"
               sx={{ flexGrow: 1, display: { xs: 'none', sm: 'block' } }}
             >
-              MUI
+              USERS
             </Typography>
             <Search>
               <SearchIconWrapper>
