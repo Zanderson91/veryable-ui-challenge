@@ -10,7 +10,20 @@ export default function Homepage() {
       </div>
       <div className="usercard">
           <UserCard />
-      </div>
+          </div>
+          <div className="usercard">
+          <UserCard />
+          </div>
+          <div className="usercard">
+          <UserCard />
+          </div>
+          <div className="usercard">
+          <UserCard />
+          </div>
+          <div className="usercard">
+          <UserCard />
+          </div>
+
       </div>
     );
   }
