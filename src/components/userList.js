@@ -30,7 +30,7 @@ export const userList = [
     {
         id: 2,
         firstNam: "Aristotle",
-        lastName": "",
+        lastName: "",
         role: "User",
         email: "aristotlethinks@greece.com",
         street: "14 Agora Way",
