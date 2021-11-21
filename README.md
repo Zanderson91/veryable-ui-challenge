@@ -22,7 +22,9 @@ Material UI was the library of choice.
   - [Questions](#Questions)
 
   # Installation 
-  npm install and npm run dev...dev run concurrently with JSON data on PORT 4000 along with the REACT App on local server.
+  npm install and npm run dev.
+  
+  npm run dev runs JSON-server concurrently with JSON data on PORT 4000 along with the REACT App on the local server.
 
   # Usage
   The UI can be used to browse users and expand details about each user. JSON Server API call is used to return data to the dashboard.
