@@ -9,6 +9,7 @@ import InputBase from '@mui/material/InputBase';
 import MenuIcon from '@mui/icons-material/Menu';
 import SearchIcon from '@mui/icons-material/Search';
 import './navbar';
+import PeopleIcon from '@mui/icons-material/People';
 
 const Search = styled('div')(({ theme }) => ({
     position: 'relative',
@@ -73,7 +74,9 @@ const Search = styled('div')(({ theme }) => ({
               component="div"
               sx={{ flexGrow: 1, display: { xs: 'none', sm: 'block' } }}
             >
-              USERS
+              <PeopleIcon />
+               USERS
+              
             </Typography>
             <Search>
               <SearchIconWrapper>
