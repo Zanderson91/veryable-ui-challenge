@@ -1,5 +1,37 @@
 .title {
-    font-family: 'Courier New', Courier, monospace ;
+    font-family:Arial, Helvetica, sans-serif;
     font-size: 16px;
+    font-weight: 700;
+    line-height: 120%;
+}
+
+.details {
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 14px;
     font-weight: 500;
+}
+
+.space {
+    padding-top: 10px;
+}
+
+.css-46bh2p-MuiCardContent-root {
+    padding: 0px 0px 0px 70px !important;
+}
+
+.css-et1ao3-MuiTypography-root {
+    font-family: Arial, Helvetica, sans-serif !important;
+    font-size: 18px !important;
+    font-weight: 700 !important;
+    color: #4a4a4a !important;
+}
+
+.css-83ijpv-MuiTypography-root {
+    font-family: Arial, Helvetica, sans-serif !important;
+    font-size: 12px !important;
+    color: #4a4a4a !important;
+}
+
+.css-wtp9r2-MuiPaper-root-MuiCard-root {
+    margin-top: 16px;
 }

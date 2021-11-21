@@ -13,21 +13,6 @@ export default function Homepage() {
         <SearchAppBar />
       </div>
       <div className="usercard">
-          <UserCard />
-          </div>
-          <div className="usercard">
-          <UserCard />
-          </div>
-          <div className="usercard">
-          <UserCard />
-          </div>
-          <div className="usercard">
-          <UserCard />
-          </div>
-          <div className="usercard">
-          <UserCard />
-          </div>
-          <div>
           <Notes />
           </div>
 

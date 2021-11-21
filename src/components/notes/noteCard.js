@@ -12,6 +12,7 @@ import MoreVertIcon from '@mui/icons-material/MoreVert';
 import PersonIcon from '@mui/icons-material/Person';
 import '../card/card.css'
 import { useState, useEffect } from 'react';
+import './noteCard.css'
 
 const ExpandMore = styled((props) => {
     const { expand, ...other } = props;
@@ -55,12 +56,19 @@ export default function NoteCard({note}) {
          <CardContent>
    <Typography paragraph></Typography>
           
-   <div className="title">Phone:</div>
-   <div>{note.phone}</div>
-   <Typography paragraph>Created At:</Typography>
-   <div>{note.createdAt}</div>
-   <Typography paragraph>Last Logged In:</Typography>
-   <div>{note.lastLoggedIn}</div>
+   <span className="title">Phone:</span>
+   <div>
+   <span className="details">{note.phone}</span>
+   </div>
+   <div className="space" />
+   <span className="title">Created At:</span>
+   <div>
+    <span className="details">{note.createdAt}</span>
+    </div>
+    <div className="space" />
+    <span className="title">Last Logged In:</span>
+    <div/>
+   <span className="details">{note.lastLoggedIn}</span>
    </CardContent>
   </Collapse>
         </Card>
