@@ -1,37 +1,50 @@
 .title {
     font-family:Arial, Helvetica, sans-serif;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 700;
     line-height: 120%;
 }
 
 .details {
     font-family:Arial, Helvetica, sans-serif;
-    font-size: 14px;
+    font-size: 13px;
     font-weight: 500;
 }
 
 .space {
-    padding-top: 10px;
+    padding-top: 30px;
 }
 
 .css-46bh2p-MuiCardContent-root {
-    padding: 0px 0px 0px 70px !important;
+    padding: 0px 0px 40px 104px !important;
 }
 
 .css-et1ao3-MuiTypography-root {
     font-family: Arial, Helvetica, sans-serif !important;
-    font-size: 18px !important;
+    font-size: 20px !important;
     font-weight: 700 !important;
     color: #4a4a4a !important;
 }
 
 .css-83ijpv-MuiTypography-root {
     font-family: Arial, Helvetica, sans-serif !important;
-    font-size: 12px !important;
+    font-size: 14px !important;
     color: #4a4a4a !important;
 }
 
-.css-wtp9r2-MuiPaper-root-MuiCard-root {
-    margin-top: 16px;
+.css-tzssek-MuiSvgIcon-root {
+    font-size: 70px !important;
+}
+
+.css-11lq3yg-MuiGrid-root {
+    padding-top: 16px;
+    justify-content: center;
+}
+
+.css-vj1n65-MuiGrid-root {
+    padding: 20px !important;
+}
+
+.css-bhp9pd-MuiPaper-root-MuiCard-root {
+    margin-bottom: 16px;
 }

@@ -52,10 +52,14 @@ export default function NoteCard({note}) {
             title={note.firstName}
             subheader={note.role}
             />
+            
             <Collapse in={expanded} timeout="auto" unmountOnExit>
          <CardContent>
-   <Typography paragraph></Typography>
-          
+         <span className="title">Address:</span>
+   <div>
+   <span className="details">{note.street}, {note.city}, {note.state}</span>
+   </div>
+   <div className="space" />        
    <span className="title">Phone:</span>
    <div>
    <span className="details">{note.phone}</span>

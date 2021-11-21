@@ -20,7 +20,7 @@ return (
     <Container>
         <Grid container>
         {notes.map(note => (
-            <Grid item key={note.id} xs={12} md={8} lg={8}>
+            <Grid item key={note.id} xs={10} md={10} lg={10}>
 <NoteCard note={note} />               
  </Grid>
         ))}
