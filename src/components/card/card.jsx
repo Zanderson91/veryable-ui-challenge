@@ -24,7 +24,7 @@ const ExpandMore = styled((props) => {
   }),
 }));
 
-export default function UserCard({Users}) {
+export default function UserCard({ user }) {
   const [expanded, setExpanded] = React.useState(false);
 
   const handleExpandClick = () => {
@@ -32,37 +32,65 @@ export default function UserCard({Users}) {
   };
 
   return (
-    <Card sx={{ width: 500 }}>
-      <CardHeader
+    <div>
+      <Card>
+        <CardHeader
         avatar={
           <PersonIcon fontSize="large">
           </PersonIcon>
-        }
-        // title={Users.id}
-        // subheader={Users.zip}
-        
-        action={
-            <ExpandMore
+          }
+          action={
+           <ExpandMore
             expand={expanded}
             onClick={handleExpandClick}
             aria-expanded={expanded}
-            aria-label="show more"
-          >
+            >
             <ExpandMoreIcon />
           </ExpandMore>
           }
-        />
-      <Collapse in={expanded} timeout="auto" unmountOnExit>
-        <CardContent>
-          <Typography paragraph>First Name</Typography>
+          />
+          <Collapse in={expanded} timeout="auto" unmountOnExit>
+       <CardContent>
+ <Typography paragraph></Typography>
         
-            <Typography paragraph>Phone:</Typography>
+ <Typography paragraph>Phone:</Typography>
+ <Typography paragraph>Created At:</Typography>
+ <Typography paragraph>Last Logged In:</Typography>
+ </CardContent>
+</Collapse>
+      </Card>
+    </div>
+  )
+        }
 
-            <Typography paragraph>Created At:</Typography>
+//     <Card sx={{ width: 500 }}>
+//       <CardHeader
+//         
+//         // title={user.id}
+//         // subheader={user.zip}
+        
+//         action={
+//             <ExpandMore
+//             expand={expanded}
+//             onClick={handleExpandClick}
+//             aria-expanded={expanded}
+//             aria-label="show more"
+//           >
+//             <ExpandMoreIcon />
+//           </ExpandMore>
+//           }
+//         />
+//       <Collapse in={expanded} timeout="auto" unmountOnExit>
+//         <CardContent>
+//           <Typography paragraph>First Name</Typography>
+        
+//             <Typography paragraph>Phone:</Typography>
 
-            <Typography paragraph>Last Logged In:</Typography>
-        </CardContent>
-      </Collapse>
-    </Card>
-  );
-}
+//             <Typography paragraph>Created At:</Typography>
+
+//             <Typography paragraph>Last Logged In:</Typography>
+//         </CardContent>
+//       </Collapse>
+//     </Card>
+//   );
+// }
