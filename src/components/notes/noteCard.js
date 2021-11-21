@@ -7,7 +7,6 @@ import Collapse from '@mui/material/Collapse';
 import IconButton from '@mui/material/IconButton';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import PersonIcon from '@mui/icons-material/Person';
-import '../card/card.css'
 import './noteCard.css'
 
 const ExpandMore = styled((props) => {

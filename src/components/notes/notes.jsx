@@ -1,5 +1,4 @@
 import React, {useEffect, useState } from 'react'
-import Card from '@mui/material/Card';
 import Grid from '@mui/material/Grid';
 import Container from '@mui/material/Grid';
 import NoteCard from './noteCard';
