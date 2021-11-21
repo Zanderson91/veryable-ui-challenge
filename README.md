@@ -7,8 +7,11 @@
 
 
   # Description
-This UI serves as dashboard that renders a single view list of users.
-Material UI was the library used.
+This UI serves as a dashboard that renders a single view list of users. 
+
+Material UI was the library of choice.
+
+
   # Table of Contents
   - [Description](#Description)
   - [Installation](#Installation)
@@ -22,7 +25,7 @@ Material UI was the library used.
   npm install and npm run dev...dev run concurrently with JSON data on PORT 4000 along with the REACT App on local server.
 
   # Usage
-  The app can be use to consolidate all of your apps into one place. Multiple API calls are used to return data to the dashboard"
+  The UI can be used to browse users and expand details about each user. JSON Server API call is used to return data to the dashboard.
 
   # License
   Mozilla Public License 2.0
